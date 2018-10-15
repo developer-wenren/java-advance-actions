@@ -1,0 +1,11 @@
+<?xml version = "1.0"?>
+<project name = "Hello World Project" default = "info">
+    <property name="name" value="one"/>
+    <target name = "info">
+        <!--<echo>Hello World - Welcome to Apache Ant!</echo>-->
+        <echo>Hello World - ${ant.file}</echo>
+        <echo>Hello World - ${name}</echo>
+        <echo>Hello Ant - ${username}</echo>
+    </target>
+    <property file="./resource/data.properties"/>
+</project>
